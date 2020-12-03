@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PatientInfoEdit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_hin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="Health Insurance Number:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="patient name:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_patient_race"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="race:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_patient_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="age:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_patient_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="gender:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_patient_marital_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="marital status:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_patient_drug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="drug:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_patient_dose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="dose in milliliter:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_patient_lab_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="lab test/s:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="ward:" />
+
+            <!--    <androidx.appcompat.widget.AppCompatEditText-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginLeft="7dp"-->
+            <!--        android:layout_marginTop="5dp"-->
+            <!--        android:hint="ward:" />-->
+
+            <!--    <androidx.appcompat.widget.AppCompatEditText-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginLeft="7dp"-->
+            <!--        android:layout_marginTop="5dp"-->
+            <!--        android:hint="room:" />-->
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_patient_treatment_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:hint="treatment history:" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_patient_is_discharged"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Discharged" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_time_of_admittance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:hint="time of admittance: " />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ok_button_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Ok" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancel_button_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ok_button_id"
+                    android:text="Cancel" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/schedule_button_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cancel_button_id"
+                    android:text="Schedule" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/prescription_button_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/schedule_button_id"
+                    android:text="Prescription" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
